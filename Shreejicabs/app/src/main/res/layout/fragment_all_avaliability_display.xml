@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.All_avaliability_display">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:lottie_fileName="loading_animation.json"
+        custom:lottie_autoPlay="true"
+        custom:lottie_loop="true"
+        android:id="@+id/loading_screeen"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/avaliabilityrec"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/card"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Availability Please Add Your availabity"
+        android:textSize="@dimen/text_size_large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/gen_black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/noavaliabilitytxt"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/card"></TextView>
+    <com.github.ag.floatingactionmenu.OptionsFabLayout
+        android:id="@+id/fab_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:color="@color/colorAccent"
+        custom:options_color="@color/colorPrimary"
+        custom:options_menu="@menu/fab_menu"
+        custom:src="@drawable/plus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cityprefbtn"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="@string/pleaseentercitypref"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:textSize="15sp" />
+
+</FrameLayout>

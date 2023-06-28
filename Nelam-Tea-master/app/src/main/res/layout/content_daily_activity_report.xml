@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DailyActivityReportActivity"
+    tools:showIn="@layout/activity_daily_report">
+
+<LinearLayout
+    android:id="@+id/linearImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14sdp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_complaint"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_filter_black_24dp"
+        />
+
+</LinearLayout>
+
+    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+        android:id="@+id/sp_dealers"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_design"
+        android:layout_margin="@dimen/_10sdp"
+        app:SearchHintText="@string/dealers"
+        app:RevealEmptyText="@string/dealers"
+        android:paddingLeft="@dimen/_5sdp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_design"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="7"
+        android:gravity="start"
+        android:padding="@dimen/_5sdp"
+        android:hint="@string/message"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/button_design"
+        android:textColor="#ffffff"
+        android:text="@string/submit"
+        />
+</LinearLayout>

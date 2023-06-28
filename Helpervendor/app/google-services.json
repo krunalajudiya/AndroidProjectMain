@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "20480726608",
+    "project_id": "helperfactory-73a79",
+    "storage_bucket": "helperfactory-73a79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20480726608:android:27b2093e60ffd24198e355",
+        "android_client_info": {
+          "package_name": "com.helperfactory.homeservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20480726608-ins528cnap7jsudcsfaehjetloj4e1vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helperfactory.homeservices",
+            "certificate_hash": "0c604ff5c911b25ab597a24b9e94da56fdc6bfb4"
+          }
+        },
+        {
+          "client_id": "20480726608-kjt2v0rili4p24p07aoj59f8m6p4lq8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helperfactory.homeservices",
+            "certificate_hash": "744b4aad498089e2521324941ee5df8ffc0da41c"
+          }
+        },
+        {
+          "client_id": "20480726608-pjq316b46t83m3r8ui3s335du357li3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helperfactory.homeservices",
+            "certificate_hash": "543dedfd0b15a9ed5aa7694bd527f19b2edefaa6"
+          }
+        },
+        {
+          "client_id": "20480726608-phi49hsfj4255uau1eo35i1t7v1k2b2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVZ98x2WM5ukDgJuB91aUk5osgxXdhjlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20480726608-phi49hsfj4255uau1eo35i1t7v1k2b2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20480726608:android:7b3cd91deca82da198e355",
+        "android_client_info": {
+          "package_name": "com.helperfactory.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20480726608-phi49hsfj4255uau1eo35i1t7v1k2b2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVZ98x2WM5ukDgJuB91aUk5osgxXdhjlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20480726608-phi49hsfj4255uau1eo35i1t7v1k2b2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

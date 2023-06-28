@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:background="@color/section_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/sub_cat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_subtitle_size"
+                android:text="Men`s Haircut &amp; Grooming"
+                android:fontFamily="@font/aquawaxmedium"
+                android:textColor="@color/text_black_color"></TextView>
+            <TextView
+                android:id="@+id/date_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_paragraph_size"
+                android:text="2:00 PM on 6th sep 2020"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_grey_color"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textColor="#ffffff"
+                android:id="@+id/booking_msg_txt"
+                android:fontFamily="@font/aquawaxmedium"
+                android:background="@drawable/booking_accept_box"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We will send the details of your service provider one hours before scheduled time."
+        android:gravity="center"
+        android:textSize="@dimen/text_paragraph_size"
+        android:fontFamily="@font/aquawaxlight"
+        android:textColor="@color/text_grey_color"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/rec_divider"
+        android:layout_marginTop="@dimen/activity_margin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:gravity="center"
+            android:layout_weight="0.99"
+            android:id="@+id/detail"
+            android:visibility="visible"
+            android:textSize="@dimen/text_paragraph_size"
+            android:fontFamily="@font/aquawaxlight"
+            android:textColor="@color/text_grey_color"
+            android:padding="10dp"></TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.01"
+            android:layout_height="match_parent"
+            android:background="@color/rec_divider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bill"
+            android:layout_weight="0.99"
+            android:gravity="center"
+            android:id="@+id/bill"
+            android:textSize="@dimen/text_paragraph_size"
+            android:fontFamily="@font/aquawaxlight"
+            android:textColor="@color/text_grey_color"
+            android:padding="10dp"></TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/rec_divider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/review"
+            android:gravity="center"
+            android:id="@+id/review"
+            android:layout_weight="0.99"
+            android:textSize="@dimen/text_paragraph_size"
+            android:fontFamily="@font/aquawaxlight"
+            android:textColor="@color/text_grey_color"
+            android:padding="10dp"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/rec_divider"></View>
+
+
+
+
+</LinearLayout>

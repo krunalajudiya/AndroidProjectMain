@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fregment.FormStep6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proposed Business"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product : Wall Tile"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12 x 18/300 x 450"
+                    android:textColor="@color/mdtp_transparent_black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sqmtswall1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Sq. Mts."
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/amountwall1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Amount"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duration"
+                    android:textColor="@color/mdtp_transparent_black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <RadioGroup
+                    android:id="@+id/durationwall1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/monthlywall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Monthly"
+                        android:textColor="@color/mdtp_transparent_black" />
+
+                    <RadioButton
+                        android:id="@+id/quarterlywall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Quarterly"
+                        android:textColor="@color/mdtp_transparent_black" />
+
+                    <RadioButton
+                        android:id="@+id/yearwall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yearly"
+                        android:textColor="@color/mdtp_transparent_black" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product : Wall Tile"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 x 24/300 x 600"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sqmtswall2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Sq. Mts."
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/amountwall2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Amount"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/durationwall2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/monthlywall2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:textColor="@color/mdtp_transparent_black" />
+
+                        <RadioButton
+                            android:id="@+id/quarterlywall2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quarterly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/yearlywall2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product : DC"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 x 2/600 x 600"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sqmtsdc1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Sq. Mts."
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/amountdc1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Amount"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/durationdc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/monthlydc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/quarterlydc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quarterly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/yearlydc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product : DC"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="80 x 80/800 x 800"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sqmtsdc2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Sq. Mts."
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/amountdc2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Amount"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/durationdc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/monthlydc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/quarterlydc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quarterly"
+                            android:textColor="@color/mdtp_transparent_black" />
+
+                        <RadioButton
+                            android:id="@+id/yearlydc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product : GVT PGVT"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="60 x 120/600 x 1200"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sqmtsgvtpgvt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Sq. Mts."
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/amountgvtpgvt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Amount"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textColor="@color/mdtp_transparent_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/durationgvtpgvt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/monthlygvtpgvt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/quarterlygvtpgvt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quarterly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+
+                        <RadioButton
+                            android:id="@+id/yearlygvtpgvt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly"
+                            android:textColor="@color/mdtp_transparent_black"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

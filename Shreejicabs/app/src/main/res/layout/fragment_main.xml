@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Fragment.Main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the TaxiTrip"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biggest Taxi Group of India"
+            android:layout_below="@id/heading"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF3E00"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We take pride in your ride. The Taxi you see everywhere."
+            android:layout_below="@id/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/taxigif"
+            android:layout_below="@id/description"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:src="@drawable/taxic"
+            />
+
+        <TextView
+            android:id="@+id/features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Features are coming soon"
+            android:layout_below="@id/taxigif"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF3E00"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay connected with us for new Exciting offers"
+            android:layout_below="@id/features"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

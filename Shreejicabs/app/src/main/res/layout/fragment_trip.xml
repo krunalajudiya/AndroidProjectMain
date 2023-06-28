@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.Fragment.Trip">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Trip Requirement"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gen_black"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/from_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="From"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                android:inputType="textPersonName"
+                app:met_iconLeft="@drawable/location_pin"
+                app:met_primaryColor="@color/gen_black"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/to_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/pin"
+                android:inputType="textPersonName"
+                android:nextFocusForward="@id/comment"
+                app:met_primaryColor="@color/gen_black"/>
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/date"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="date"-->
+<!--                android:enabled="false"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableLeft="@drawable/calendar"/>-->
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/calendar"
+                android:editable="false"
+                app:met_primaryColor="@color/gen_black"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                android:editable="false"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/clock"
+                app:met_primaryColor="@color/gen_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gen_black"
+                android:textSize="15dp"
+                android:text="Car type"/>
+
+            <RadioGroup
+                android:id="@+id/car_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/suv"/>
+                    <RadioButton
+                        android:id="@+id/suv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUV"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hatchback"
+                        android:gravity="left"/>
+                    <RadioButton
+                        android:id="@+id/hatchback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hatchback"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sedan"/>
+                    <RadioButton
+                        android:id="@+id/sedan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sedan"/>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="comunication way"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5sp"
+                android:textColor="@color/gen_black"/>
+            <RadioGroup
+                android:id="@+id/communication_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/whatsapp"/>
+
+                    <RadioButton
+                        android:id="@+id/sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sms"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call" />
+
+                    <RadioButton
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="call"/>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comment"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/comment"
+                app:met_primaryColor="@color/gen_black"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:textColor="@color/gen_black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background_user"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

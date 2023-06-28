@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Membership_plan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorprimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skip"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black_color"
+                android:textStyle="bold"
+                android:id="@+id/skip"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:textSize="@dimen/text_subtitle_size"></TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            app:cardBackgroundColor="#ECEBEB"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="@dimen/activity_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/silver_tile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/aquawaxmedium"
+                        android:text="Silver"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/silver_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:text="\u20B9 16"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/silver_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="30 % Discount"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="28dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/silver_list"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:text="\u2022 Gets 3 Months listing\n\u2022 Upto 8 Photos"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="@dimen/text_subtitle_size"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/sliver_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Now"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            app:cardBackgroundColor="#43D0E1"
+            app:cardCornerRadius="8dp"
+
+            app:contentPadding="@dimen/activity_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gold_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/aquawaxmedium"
+                        android:text="Silver"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/gold_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:text="\u20B9 16"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gold_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="60 % Discount"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/gold_list"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:text="\u2022 Gets All the benefits\n\u2022 Gets 3 Months listing\n\u2022 Upto 8 Photos"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_subtitle_size"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/gold_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Now"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            app:cardBackgroundColor="#0088FF"
+            app:cardCornerRadius="8dp"
+
+            app:contentPadding="@dimen/activity_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/premium_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/aquawaxmedium"
+                        android:text="Silver"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/premium_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:text="\u20B9 16"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_title_size"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/premium_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="70 % Discount"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/premium_list"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:text="\u2022 Our Most Popular Package\n\u2022 Gets 3 Months listing\n\u2022 Upto 8 Photos"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_subtitle_size"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/premium_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Now"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+</LinearLayout>

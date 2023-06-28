@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AddRetailerActivity"
+    tools:showIn="@layout/activity_add_retailer">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_retailer_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="text"
+                android:hint="@string/retailer_name"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="text"
+                android:hint="@string/shop_name"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_Mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="number"
+                android:hint="Mobile No"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp" />
+
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="5"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:hint="@string/address"
+                />
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_design"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/sp_dealers"
+                app:SearchHintText="@string/dealers"
+                app:RevealEmptyText="@string/dealers"
+                android:paddingLeft="@dimen/_5sdp"
+                />
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_design"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/sp_route"
+                app:SearchHintText="@string/route"
+                app:RevealEmptyText="@string/route"
+                android:paddingLeft="@dimen/_5sdp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Submit"
+        android:elevation="@dimen/_4sdp"
+        android:textSize="@dimen/_15sdp"
+        android:background="@drawable/button_design"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+</LinearLayout>

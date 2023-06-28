@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">TaxiTrip</string>
+
+    <string name="register" tools:ignore="MissingTranslation">Register</string>
+    <string name="title_activity_registration" tools:ignore="MissingTranslation">Registration</string>
+    <string name="forgot" tools:ignore="MissingTranslation">Forgot Password</string>
+    <string name="register_now" tools:ignore="MissingTranslation">Register Now</string>
+    <string name="already_mem" tools:ignore="MissingTranslation">Already a member ? </string>
+    <string name="login_now" tools:ignore="MissingTranslation">Already Register? Login Now</string>
+    <string name="login" tools:ignore="MissingTranslation">Login</string>
+    <string name="chooselicense" tools:ignore="MissingTranslation">Choose Licence</string>
+    <string name="areyou" tools:ignore="MissingTranslation">Are You</string>
+    <string name="home" tools:ignore="MissingTranslation">Home</string>
+    <string name="logout" tools:ignore="MissingTranslation">Logout</string>
+    <string name="contact_us" tools:ignore="MissingTranslation">Support</string>
+    <string name="policy" tools:ignore="MissingTranslation">Policy</string>
+    <string name="suggestion" tools:ignore="MissingTranslation">Send Us Suggestion</string>
+    <string name="shareapp" tools:ignore="MissingTranslation">Share App</string>
+    <string name="search" tools:ignore="MissingTranslation">Search</string>
+    <string name="pickdrop" tools:ignore="MissingTranslation">Booking</string>
+    <string name="avaliability" tools:ignore="MissingTranslation">Available</string>
+    <string name="profile" tools:ignore="MissingTranslation">Profile</string>
+
+    <string name="from" tools:ignore="MissingTranslation">From</string>
+    <string name="to" tools:ignore="MissingTranslation">To</string>
+    <string name="date" tools:ignore="MissingTranslation">Date</string>
+    <string name="time" tools:ignore="MissingTranslation">Time</string>
+    <string name="cartype" tools:ignore="MissingTranslation">Car Type</string>
+    <string name="service" tools:ignore="MissingTranslation">Service</string>
+    <string name="comment" tools:ignore="MissingTranslation">Comment</string>
+    <string name="communication" tools:ignore="MissingTranslation">Communication</string>
+    <string name="addavaliability" tools:ignore="MissingTranslation">Add Availability</string>
+    <string name="packages" tools:ignore="MissingTranslation">Packages</string>
+    <string name="packagename" tools:ignore="MissingTranslation">Package Name</string>
+    <string name="city" tools:ignore="MissingTranslation">City</string>
+    <string name="rate" tools:ignore="MissingTranslation">Rate</string>
+    <string name="addpackage" tools:ignore="MissingTranslation">Add Package</string>
+    <string name="newpassword" tools:ignore="MissingTranslation">New Password</string>
+    <string name="oldpassword" tools:ignore="MissingTranslation">Old Password</string>
+    <string name="confirmpassword" tools:ignore="MissingTranslation">Confirm Password</string>
+    <string name="changepassword" tools:ignore="MissingTranslation">Change Password</string>
+    <string name="next" tools:ignore="MissingTranslation">Next</string>
+    <string name="skip" tools:ignore="MissingTranslation">Skip</string>
+    <string name="start" tools:ignore="MissingTranslation">Start</string>
+
+    <string name="slide_1_title" tools:ignore="MissingTranslation">Best Solution of one way trip</string>
+    <string name="slide_1_desc" tools:ignore="MissingTranslation">Earn Maximum rate with our app</string>
+
+    <string name="slide_2_title" tools:ignore="MissingTranslation">Cheap Rates</string>
+    <string name="slide_2_desc" tools:ignore="MissingTranslation">Latest Features with User Friendly Interface</string>
+
+    <string name="slide_3_title" tools:ignore="MissingTranslation">Find taxi easily</string>
+    <string name="slide_3_desc" tools:ignore="MissingTranslation">Serch by route,city,date,car type and many more filtration available with one touch</string>
+
+    <string name="slide_4_title" tools:ignore="MissingTranslation">Add your Availability</string>
+    <string name="slide_4_desc" tools:ignore="MissingTranslation">Increase scope of your business</string>
+    <string name="chat" tools:ignore="MissingTranslation">Chat</string>
+    <string name="addrequiredvehicle" tools:ignore="MissingTranslation">Add Vehicle</string>
+    <string name="updaterequiredvehicle" tools:ignore="MissingTranslation">Update Vehicle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="updateavaliability" tools:ignore="MissingTranslation">Update Avaliability</string>
+    <string name="updatepackage" tools:ignore="MissingTranslation">Update Package</string>
+    <string name="addcity" tools:ignore="MissingTranslation">Add City</string>
+    <string name="actionsearch" tools:ignore="MissingTranslation">Action Search</string>
+    <string name="search_hint" tools:ignore="MissingTranslation">Search City</string>
+    <string name="updateinformation" tools:ignore="MissingTranslation">Update Information</string>
+    <string name="pleaseentercitypref" tools:ignore="MissingTranslation">Please Enter City Preference</string>
+    <string name="placeapikey" tools:ignore="MissingTranslation">AIzaSyDo7j-pdUFrEymSkLK7zTZrqYJe3vkrwVA</string>
+    <string name="removerequiredvehicle" tools:ignore="MissingTranslation">Remove</string>
+
+    <string name="drw_open" tools:ignore="MissingTranslation">Open</string>
+    <string name="drw_close" tools:ignore="MissingTranslation">Close</string>
+
+
+</resources>

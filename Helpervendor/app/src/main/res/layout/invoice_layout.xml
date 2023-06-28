@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_invoice_layout"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/main_header">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helperfactory"
+                android:textColor="@color/text_black_color"
+                android:textStyle="bold"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="9724578415"
+                android:textColor="@color/text_black_color"
+                android:fontFamily="@font/simple_font"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INVOICE"
+                android:textColor="@color/text_black_color"
+                android:textStyle="bold"
+                android:fontFamily="@font/simple_font"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_header"
+        android:layout_marginTop="10dp"
+        android:id="@+id/header_below_section">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill To:"
+                android:textColor="@color/text_black_color"
+                android:textStyle="bold"
+                android:fontFamily="@font/simple_font"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/name_and_address"
+                android:text="Arjun Chavda\nYadavnagar\nJamanagar\nIndia"
+                android:textColor="@color/text_black_color"
+                android:fontFamily="@font/simple_font"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice date"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/text_black_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/simple_font"
+                    android:textSize="14sp"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="12/11/2019"
+                    android:id="@+id/invoice_date"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/text_black_color"
+                    android:fontFamily="@font/simple_font"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_below_section"
+        android:orientation="vertical"
+        android:id="@+id/list_of_item"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#815E5E">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Item Description"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_weight="1.1"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:gravity="right"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Service Charges"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:layout_weight="1.1"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:id="@+id/service_charge"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:id="@+id/service_charge_amount"
+                android:layout_weight="0.4"
+                android:gravity="right"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Part Charges"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:layout_weight="1.1"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:id="@+id/partquantity"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:id="@+id/partquantity_charge"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:padding="5dp"
+                android:id="@+id/partquantity_charge_amount"
+                android:layout_weight="0.4"
+                android:gravity="right"
+                android:fontFamily="@font/simple_font"
+                android:textSize="16sp"></TextView>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_of_item"
+        android:id="@+id/sub_total_section"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sub total"
+            android:textColor="@color/text_black_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_weight="0.8"
+            android:id="@+id/sub_total_txt"
+            android:fontFamily="@font/simple_font"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@color/text_black_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/simple_font"
+            android:textSize="16sp"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_total_section"
+        android:id="@+id/total_section"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/text_black_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/simple_font"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@color/text_black_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:id="@+id/invoice_total_amount_txt"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/simple_font"
+            android:textSize="16sp"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_section"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/text_grey_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:fontFamily="@font/simple_font"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It was great doing business with you"
+            android:textColor="@color/text_black_color"
+            android:padding="5dp"
+            android:gravity="right"
+            android:fontFamily="@font/simple_font"
+            android:textSize="14sp"></TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

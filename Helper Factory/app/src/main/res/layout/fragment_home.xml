@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragments.Home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/sliderlayout"
+            android:padding="@dimen/activity_margin"
+            android:background="@color/section_color">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/slider"></androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_below="@+id/sliderlayout"
+            android:id="@+id/categorylayout"
+            android:background="@color/section_color"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryrec">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/offerlayout"
+            android:layout_below="@+id/categorylayout"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:background="@color/section_color"
+            android:padding="@dimen/activity_margin"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_title_size"
+                    android:text="@string/bestoffer"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aquawaxblack"
+                    android:textColor="@color/text_black_color"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_subtitle_size"
+                    android:text="@string/hygienicandsingleuse"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aquawaxlight"
+                    android:textColor="@color/text_grey_color"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/offerrec"
+                    android:layout_marginTop="8dp"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offerlayout"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:background="@color/section_color"
+            android:paddingTop="@dimen/activity_margin"
+            android:paddingBottom="@dimen/activity_margin"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_title_size"
+                android:text="@string/customeersafteyisourpriority"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aquawaxblack"
+                android:textColor="@color/text_black_color"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_subtitle_size"
+                android:text="@string/whatcustomersayingabout"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aquawaxlight"
+                android:textColor="@color/text_grey_color"></TextView>
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/testimoniallider"
+                android:layout_marginTop="8dp"></androidx.viewpager.widget.ViewPager>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

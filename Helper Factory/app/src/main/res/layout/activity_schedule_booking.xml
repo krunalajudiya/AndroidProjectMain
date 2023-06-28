@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.Schedule_booking">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorprimary">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/select_date_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="#FF5B5B"
+        android:fontFamily="@font/aquawaxmedium"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/pleaseselectdate"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_subtitle_size"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout3"
+        android:layout_below="@+id/select_date_label"
+        android:background="@color/section_color"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:text="@string/whendoyouneedthisdevice"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_title_size"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/today"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:layout_weight="0.33"
+                android:background="@drawable/schedule_selector"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/today_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="21"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_subtitle_size"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/today"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tomorrow"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:layout_weight="0.33"
+                android:background="@drawable/schedule_selector"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tomorrow_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="21"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_subtitle_size"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tomorrow"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_subtitle_size"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickdate"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/schedule_selector"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/booking"></ImageView>
+
+                <TextView
+                    android:id="@+id/pickdate_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pick a date"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_subtitle_size"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:fontFamily="@font/aquawaxmedium"
+            android:text="@string/selecttime"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_title_size"></TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittext_border"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/eighttonine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="8 AM To 9 AM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ninetoten"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="9 AM To 10 AM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tentoeleven"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="10 AM To 11 AM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/eleventotweleve"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="11 AM To 12 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twelevetoone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="12 PM To 1 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/onetotwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1 PM To 2 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/twotothree"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2 PM To 3 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/threetofour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="3 PM To 4 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourtofive"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="4 PM To 5 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/fivetosix"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="5 PM To 6 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixtoseven"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="6 PM To 7 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seventoeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="7 PM To 8 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/eighttoninepm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="8 PM To 9 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ninetotenpm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_weight="0.33"
+                        android:background="@drawable/schedule_selector"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="9 PM To 10 PM"
+                            android:textColor="@color/text_black_color"
+                            android:textSize="@dimen/text_subtitle_size"></TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/section_color"
+        android:baselineAligned="false"
+        android:elevation="15dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pricing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 548"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_title_size"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Item"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/text_subtitle_size"
+                android:visibility="gone"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|end">
+
+            <android.widget.Button
+                android:id="@+id/continue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/aquawaxmedium"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/continues"
+                android:textColor="@color/text_black_color"></android.widget.Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

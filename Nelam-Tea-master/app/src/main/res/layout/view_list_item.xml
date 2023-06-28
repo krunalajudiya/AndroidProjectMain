@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_product_name1"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_4sdp"
+    android:paddingLeft="@dimen/_4sdp"
+    android:text="Bonvita"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/_15sdp"
+    android:textColor="@color/colorBlack"/>

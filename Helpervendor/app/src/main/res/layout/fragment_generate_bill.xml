@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Generate_bill">
+
+    <RelativeLayout
+        android:id="@+id/main_invoice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/main_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/simple_font"
+                    android:text="@string/helperfactory"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/simple_font"
+                    android:text="9724578415"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="14sp"
+                    android:visibility="gone"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/simple_font"
+                    android:text="INVOICE"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/header_below_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_header"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Bill To:"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/name_and_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Arjun Chavda\nYadavnagar\nJamanagar\nIndia"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/simple_font"
+                        android:text="Invoice date"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/invoice_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/simple_font"
+                        android:text="12/11/2019"
+                        android:textColor="@color/text_black_color"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_of_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_below_section"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#815E5E"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="Item Description"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="Qty"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="Rate"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="Amount"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="Service Charges"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/service_charge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="120"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/service_charge_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="120"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="Part Charges"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/partquantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/partquantity_charge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="@font/simple_font"
+                    android:padding="5dp"
+                    android:text="120"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/partquantity_charge_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="120"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="16sp"></TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sub_total_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_of_item"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Sub total"
+
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/sub_total_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/discount_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_total_section"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Discount"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/discount_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coupon_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount_section"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/coupon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Coupon"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/coupon_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/total_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coupon_section"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Total"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/invoice_total_amount_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="120"
+                android:textColor="@color/text_black_color"
+                android:textSize="16sp"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_section"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Notes"
+                android:textColor="@color/text_grey_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simple_font"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="It was great doing business with you"
+                android:textColor="@color/text_black_color"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout3"
+        android:background="@color/section_color"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="@dimen/activity_margin"
+                android:fontFamily="@font/bold_italic"
+                android:gravity="center_horizontal"
+                android:text="@string/generatebill"
+                android:textAlignment="center"
+                android:textColor="#1A62C3"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_margin"
+                app:boxStrokeColor="#1A62c3"
+                app:hintTextColor="#1A62C3"
+                app:startIconDrawable="@drawable/ic_charges">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub_cat_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/servicecharge"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="#1A62c3"
+                    app:hintTextColor="#1A62C3"
+                    app:startIconDrawable="@drawable/ic_charges">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/totalpartcharges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/totalpartcharge"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_margin"
+                    android:layout_weight="0.4"
+                    android:visibility="gone"
+                    app:boxStrokeColor="#1A62c3"
+                    app:hintTextColor="#1A62C3"
+                    app:startIconDrawable="@drawable/ic_charges">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/partquanity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/totalquantity"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/activity_margin"
+                app:boxStrokeColor="#1A62c3"
+                app:hintTextColor="#1A62C3"
+                app:startIconDrawable="@drawable/ic_charges">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/yourcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/yourcharge"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_margin"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:layout_weight="0.6"
+                    app:boxStrokeColor="#1A62c3"
+                    app:hintTextColor="#1A62C3"
+                    app:startIconDrawable="@drawable/ic_discount">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/discount"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/calculate_discount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_margin"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/caldiscount"
+                    android:textColor="@color/text_black_color"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/section_color"
+        android:baselineAligned="false"
+        android:elevation="15dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_charge_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Charges"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_subtitle_size"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|end">
+
+            <Button
+                android:id="@+id/create_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simple_font"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/generatebill"
+                android:textColor="@color/text_black_color"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

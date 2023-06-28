@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.required_Vehicle">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progres_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="loading_animation.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requiredvehiclelist"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Required Vehicle avialable"
+        android:textSize="@dimen/text_size_large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/gen_black"
+        android:textStyle="bold"
+        android:id="@+id/norequiredtxt"
+        android:visibility="gone"></TextView>
+    <com.github.ag.floatingactionmenu.OptionsFabLayout
+        android:id="@+id/fab_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:color="@color/colorAccent"
+        custom:options_color="@color/colorPrimary"
+        custom:options_menu="@menu/fab_menu1"
+        custom:src="@drawable/plus" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cityprefbtn"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="@string/pleaseentercitypref"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:textSize="15sp" />
+
+</FrameLayout>

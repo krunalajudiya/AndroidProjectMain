@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        app:cardElevation="10dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/close"
+                android:src="@drawable/ic_clear"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simple_font"
+                android:text="User Details"
+                android:gravity="center"
+                android:textColor="@color/text_black_color"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone" />
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/image_customer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="visible"
+                android:src="@drawable/hf4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/activity_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Name:"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Chapla harsh j"
+                    android:id="@+id/user_name"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Mobile Number: "
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Chapla harsh j"
+                    android:id="@+id/address_customer"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Address: "
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/simple_font"
+                    android:text="Chapla harsh j"
+                    android:id="@+id/address_detail"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

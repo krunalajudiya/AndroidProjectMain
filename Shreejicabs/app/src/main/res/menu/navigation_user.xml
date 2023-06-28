@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/search"/>
+
+<!--    <item-->
+<!--        android:id="@+id/chat"-->
+<!--        android:title="Chat"-->
+<!--        android:icon="@drawable/chat"/>-->
+<!--    <item-->
+<!--        android:id="@+id/profile"-->
+<!--        android:title="Profile"-->
+<!--        android:icon="@drawable/profile"/>-->
+    <item
+        android:id="@+id/service"
+        android:title="Service"
+        android:icon="@drawable/ic_services"/>
+
+    <item
+        android:id="@+id/trip"
+        android:title="Trip"
+        android:icon="@drawable/calendar"/>
+
+</menu>

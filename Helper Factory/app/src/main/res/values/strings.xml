@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Helper Factory</string>
+    <string name="yourhomeservice">Your Home Services Expert</string>
+    <string name="quick">Quick</string>
+    <string name="affordable">Affordable</string>
+    <string name="trusted">Trusted</string>
+    <string name="hintmobilenumber">Mobile Number</string>
+    <string name="imagecontent">xyz</string>
+    <string name="des">-</string>
+    <string name="skip">Skip</string>
+    <string name="home">Home</string>
+    <string name="booking">Bookings</string>
+    <string name="profile">Account</string>
+    <string name="bestoffer">Best Offers</string>
+    <string name="hygienicandsingleuse">Hygienic &amp; single-use products | low-contact services</string>
+    <string name="selectwhatyouneed">Select what You need</string>
+    <string name="loginsignup">Login / SignUp</string>
+    <string name="enterverificationcode">Enter Verification Code</string>
+    <string name="wehavesentyou">We have sent you a 6 digit verification code on</string>
+    <string name="verifiedcustomer">Welcome</string>
+    <string name="registeraspartner">Register As Partner</string>
+    <string name="sharehelperfactory">Refer a Friend and Get Rewarded</string>
+    <string name="abouthelperfactory">Contact Us</string>
+    <string name="ratehelperfactory">Rate Helper Factory</string>
+    <string name="logout">Logout</string>
+    <string name="myprofile">My Profile</string>
+    <string name="customeersafteyisourpriority">Customer safety is our priority</string>
+    <string name="whatcustomersayingabout">What customer saying about our safety standards</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="history">History</string>
+    <string name="continues">Continue</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="pleaseselectdate">Please select date and time</string>
+    <string name="whendoyouneedthisdevice">When do you need this service</string>
+    <string name="selecttime">Select Time</string>
+    <string name="duration">Duration</string>
+    <string name="turnaroundtime">Turnaround Time</string>
+    <string name="pricing">Pricing</string>
+    <string name="booking_btn">Book Now</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="name">Name</string>
+    <string name="nobooking">No Booking Found</string>
+    <string name="looklikeyou">Look like you don`t have any booking here but you can request for a service now</string>
+    <string name="updateprofile">Update Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="nosubcategory">Subcategory not available</string>
+    <string name="resend">Resend</string>
+    <string name="bill">Bill</string>
+    <string name="ivereadandaccept">I have read and accept the Privacy Policy.</string>
+    <string name="readmore">Read more</string>
+    <string name="choosephoto">Choose Photo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="review">Review</string>
+
+</resources>

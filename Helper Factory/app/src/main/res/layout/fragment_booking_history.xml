@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Booking_history">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/historyrec">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nobookinglayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_title_size"
+            android:text="@string/nobooking"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/aquawaxblack"
+            android:textColor="@color/text_black_color"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_title_size"
+            android:text="@string/looklikeyou"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/activity_margin"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/aquawaxlight"
+            android:textColor="@color/text_grey_color"></TextView>
+        <android.widget.Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:text="@string/booking_btn"
+            android:fontFamily="@font/aquawaxmedium"
+            android:textColor="@color/text_black_color"
+            android:id="@+id/book_now"></android.widget.Button>
+
+    </LinearLayout>
+
+</FrameLayout>

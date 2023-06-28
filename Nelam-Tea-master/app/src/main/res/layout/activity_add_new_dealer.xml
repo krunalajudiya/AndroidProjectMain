@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddNewDealer">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.stepstone.stepper.StepperLayout
+        android:id="@+id/stepperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:ms_backButtonColor="@color/colorPrimary"
+        app:ms_completeButtonColor="@color/colorPrimary"
+        app:ms_nextButtonColor="@color/colorPrimary"
+        app:ms_stepperType="dots">
+
+    </com.stepstone.stepper.StepperLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+            <RadioGroup
+                android:id="@+id/dealerordistributer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/dealer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dealer" />
+
+                <RadioButton
+                    android:id="@+id/distributer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Distributor" />
+            </RadioGroup>
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:id="@+id/dealerspinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_design"
+                android:paddingLeft="@dimen/_5sdp"
+                app:RevealEmptyText="@string/dealers"
+                app:SearchHintText="@string/dealers"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/firmname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="Enter Firm Name"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="City"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp" />
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:id="@+id/d_city"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_design"
+                android:paddingLeft="@dimen/_5sdp"
+                app:RevealEmptyText="@string/city"
+                app:SearchHintText="@string/city" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Firm Type"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/firmtyperadiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/proprietorship"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Proprietorship" />
+
+                        <RadioButton
+                            android:id="@+id/partnership"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Partnership" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Oprating Since"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <Spinner
+                        android:id="@+id/opratingsince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/gstno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="GST No."
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/panno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="PAN No."
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/bank"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="Bank"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/contactperson"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="Contact Person Name"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="phone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="Address"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/noofemployees"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="No Of Employees"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_design"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

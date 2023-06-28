@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.Location_screen">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorprimary">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/section_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#000000">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/profile_img"
+                    android:id="@+id/profile_img"
+                    android:layout_gravity="center"></de.hdodenhof.circleimageview.CircleImageView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/profile_btn"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="-25dp"
+                    android:src="@drawable/profile_change_btn"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+                <EditText
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/address"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"></EditText>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/address"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/address"
+                    android:inputType="text"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"></EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/city"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/city"
+                    android:visibility="gone"
+                    android:inputType="text"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"></EditText>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    style="@style/spinner_style"
+                    android:id="@+id/city_spinner"></Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincode"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/text_title_size"></TextView>
+                <EditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/pincode"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/pincode"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"></EditText>
+
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="@string/updateprofile"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:textColor="@color/text_black_color"
+                    android:id="@+id/update_profile"></android.widget.Button>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

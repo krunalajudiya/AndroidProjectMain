@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_required_m"
+        android:title="Add Required Vehicle"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/add_required"></item>
+    <item
+        android:id="@+id/search_avaliability"
+        android:title="availability"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/search"></item>
+
+</menu>

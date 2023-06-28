@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "895119442848",
+    "firebase_url": "https://taxigroupindia-7da4e-default-rtdb.firebaseio.com",
+    "project_id": "taxigroupindia-7da4e",
+    "storage_bucket": "taxigroupindia-7da4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895119442848:android:03aa1f9f985ad03d375ac5",
+        "android_client_info": {
+          "package_name": "com.taxigroupindia.onewaytrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895119442848-hfratugf5b5l96aa8u0t17462ohmkq9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxigroupindia.onewaytrip",
+            "certificate_hash": "2b2584e1b11cac09c3cccae8c3d72b6d92b79a89"
+          }
+        },
+        {
+          "client_id": "895119442848-hto2gabd60slpe8th2drpb98f015ka3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFeTCY-xUVo6nUKZMZ6g3WsixThfUu-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895119442848-hto2gabd60slpe8th2drpb98f015ka3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

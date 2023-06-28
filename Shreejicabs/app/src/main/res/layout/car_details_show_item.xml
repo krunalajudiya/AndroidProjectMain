@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="5dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/carimage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="2dp"/>
+
+            <TextView
+                android:id="@+id/modelname_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="model :"
+                android:textColor="@color/gen_black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/passingyear_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="passing : 2020"
+                android:textColor="@color/gen_black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/fuel_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="fule : petrol"
+                    android:textColor="@color/gen_black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/color_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="color : blue"
+                    android:textColor="@color/gen_black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

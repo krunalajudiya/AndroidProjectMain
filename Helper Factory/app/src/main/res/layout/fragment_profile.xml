@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragments.Profile">
+
+
+    <LinearLayout
+        android:id="@+id/verifylayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/section_color"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/user_profile_img"
+            android:contentDescription="@string/todo"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/edit"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aquawaxblack"
+                android:text="@string/verifiedcustomer"
+                android:id="@+id/welcomemsg_txt"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_subtitle_size"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="8dp"
+                android:text="+91 "
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/text_paragraph_size"
+                android:id="@+id/usernumber"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:id="@+id/edit_profile"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/edit"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:background="@color/section_color"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifylayout">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/section_color"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/shareapp"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/share"></ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aquawaxmedium"
+                    android:text="@string/sharehelperfactory"
+                    android:textColor="@color/text_black_color"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_subtitle_size"></TextView>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/refercode"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Refer code"
+                       android:textStyle="bold"
+                       android:textColor="@color/text_grey_color"
+                       android:textSize="@dimen/text_subtitle_size"></TextView>
+
+                   <TextView
+                       android:id="@+id/yourrefer"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="you refer"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="40dp"
+                       android:textColor="@color/text_grey_color"
+                       android:textSize="@dimen/text_subtitle_size"></TextView>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/rec_divider"
+            android:gravity="bottom"></View>
+
+        <LinearLayout
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/section_color"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/about"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/aquawaxmedium"
+                android:text="@string/abouthelperfactory"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_subtitle_size"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/rec_divider"
+            android:gravity="bottom"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/section_color"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/rateapp"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/star"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/aquawaxmedium"
+                android:text="@string/ratehelperfactory"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_subtitle_size"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/rec_divider"
+            android:gravity="bottom"></View>
+
+        <LinearLayout
+            android:id="@+id/privacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/section_color"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/insurance"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/aquawaxmedium"
+                android:text="@string/privacypolicy"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_subtitle_size"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/rec_divider"
+            android:gravity="bottom"></View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:id="@+id/coupon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/coupon"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/coupontxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Coupon"
+                android:textColor="@color/text_black_color"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/couponcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coupontxt"
+                android:gravity="center"
+                android:text="code"
+                android:textColor="@color/text_grey_color"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/couponamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponcode"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/rupee"
+                android:drawablePadding="5dp"
+                android:text="Ammount"
+                android:textColor="@color/text_grey_color"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/coupondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponcode"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/booking"
+                android:drawablePadding="5dp"
+                android:text="date"
+                android:textColor="@color/text_grey_color"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:text="@string/loginsignup"
+        android:textColor="@color/logout_color"
+        android:textSize="@dimen/text_title_size"
+        android:id="@+id/login"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:fontFamily="@font/aquawaxlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></TextView>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.8"
+        android:fontFamily="@font/aquawaxlight"
+        android:text="@string/logout"
+        android:textColor="@color/logout_color"
+        android:textSize="@dimen/text_title_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

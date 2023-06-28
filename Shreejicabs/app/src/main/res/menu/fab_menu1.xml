@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fab_add"
+        android:icon="@drawable/plus"
+        android:title="Add Required Vehicle" />
+
+    <item
+        android:id="@+id/fab_edit"
+        android:icon="@drawable/edit"
+        android:title="Change Required Vehicle" />
+</menu>

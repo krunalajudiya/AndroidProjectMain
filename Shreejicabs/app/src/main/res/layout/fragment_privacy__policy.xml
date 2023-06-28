@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Fragment.Privacy_Policy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Privacy Policy"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/gen_black"></TextView>
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="The following terms and conditions (the Agreement) govern all use of the taxitrip.com website (the Site), Taxitrip app (the mobile app) and the products and services available on the Site and mobile app. The products and service available at the Site and Mobile app is owned and operated by TaxiTrip (Company). The Service is offered subject to your (the User) acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies and procedures that may be published from time to time on the Site and Mobile App by Company. BY USING OR ACCESSING ANY PART OF THE SERVICE, YOU AGREE TO ALL OF THE TERMS AND CONDITIONS CONTAINED HEREIN; IF YOU NOT AGREE, DO NOT USE OR ACCESS THE SERVICE. Company reserves the right, at its sole discretion, to modify or replace any of the terms or conditions of this Agreement at any time. It is User's responsibility to check this Agreement periodically for changes. User's continued use of the Service following the posting of any changes to this Agreement constitutes acceptance of those changes. Certain services available at the Site may be subject to additional terms and conditions. To the extent such terms and conditions conflict with this Agreement, such additional terms and conditions shall control."
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/gen_black"></com.codesgood.views.JustifiedTextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/neworder"
+        android:icon="@drawable/downarrow"
+        android:id="@+id/home"></item>
+    <item
+        android:title="@string/order"
+        android:icon="@drawable/calendar"
+        android:id="@+id/booking"></item>
+    <item
+        android:title="@string/account"
+        android:icon="@drawable/user"
+        android:id="@+id/profile"></item>
+    <item
+        android:title="@string/service"
+        android:icon="@drawable/service"
+        android:id="@+id/services"></item>
+
+
+</menu>

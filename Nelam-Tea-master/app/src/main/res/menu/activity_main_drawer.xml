@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+
+        <item
+            android:id="@+id/nav_yourhistry"
+            android:icon="@drawable/orders_view"
+            android:title="@string/menu_yourhistry" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/save_expens"
+            android:title="@string/add_daily_expense" />
+
+
+
+        <item
+            android:id="@+id/nav_livereport"
+            android:icon="@drawable/live_appliy"
+            android:title="@string/apply_livereport" />
+
+
+
+
+        <item
+            android:id="@+id/nav_dealer_visit"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/dealer_visit" />
+
+        <item
+            android:id="@+id/nav_dealer_serve_report"
+            android:icon="@drawable/img_dealer_serve_report"
+            android:title="@string/dealer_serve_report" />
+
+
+
+
+
+        <item
+            android:id="@+id/nav_view_complaint"
+            android:icon="@drawable/complaint_report"
+            android:title="@string/title_view_complaint" />
+
+        <item
+            android:id="@+id/nav_leave_report"
+            android:icon="@drawable/clipboardlivereport"
+            android:title="@string/leave_report" />
+
+        <item
+            android:id="@+id/nav_daily_activity_report"
+            android:icon="@drawable/complaint_report"
+            android:title="@string/complaint" />
+
+        <item
+            android:id="@+id/nav_sales_report"
+            android:icon="@drawable/orders_view"
+            android:title="@string/sales_report" />
+
+        <item
+            android:id="@+id/nav_add_new_dealer"
+            android:icon="@drawable/ic_group_add_black_24dp"
+            android:title="@string/add_new_dealer" />
+
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/cash_indian_rupee"
+            android:title="@string/view_expenses" />
+        <item
+            android:id="@+id/nav_daily_report"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/view_sales_report" />
+
+        <item
+            android:id="@+id/nav_catalouge"
+            android:icon="@drawable/img_dealer_serve_report"
+            android:title="Catalouge" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:visible="false"
+                android:title="@string/menu_send" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_https_black_24dp"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

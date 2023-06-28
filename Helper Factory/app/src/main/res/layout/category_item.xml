@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/xyz"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cat_img"
+            android:src="@drawable/user"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salon For Women"
+            android:gravity="center"
+            android:id="@+id/cat_name"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_black_color"
+            android:fontFamily="@font/aquawaxmedium"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_grey_color"
+        android:layout_alignParentRight="true"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_grey_color"></View>
+
+
+
+
+
+</RelativeLayout>

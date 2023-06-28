@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helperfactory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.HelperFactory"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Privacy_policy"></activity>
+        <activity android:name=".Activity.Membership_plan" />
+        <activity android:name=".Activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Update_profile" />
+        <activity android:name=".Activity.Subcategory_details" />
+        <activity android:name=".Activity.Schedule_booking" />
+        <activity android:name=".Activity.Location_screen" />
+        <activity android:name=".Activity.Otp_Screen" />
+        <activity android:name=".Activity.Subcategory" />
+        <activity android:name=".Activity.Number_Verification" />
+        <activity android:name=".MainActivity" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_rpHDddl94SL82O" />
+
+        <receiver
+            android:name=".Receiver.ConnectionReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="BR">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+<!--        <service-->
+<!--            android:name=".Services.MyFirebaseInstanceIDService"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+        <service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

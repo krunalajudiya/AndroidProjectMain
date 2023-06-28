@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:layout_marginLeft="@dimen/activity_margin"
+    android:layout_marginRight="@dimen/activity_margin"
+    android:elevation="15dp"
+    android:outlineSpotShadowColor="@color/colorprimarydark"
+    android:background="@drawable/section_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/sub_cat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_title_size"
+                android:text="Men`s Haircut &amp; Grooming"
+                android:fontFamily="@font/simple_font"
+                android:textStyle="bold"
+                android:textColor="@color/text_black_color"></TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/date_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_subtitle_size"
+                android:text="2:00 PM on 6th sep 2020"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:fontFamily="@font/simple_font"
+                android:textColor="@color/text_black_color"></TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We will send the details of your service provider one hours before scheduled time."
+        android:gravity="center"
+        android:textSize="@dimen/text_subtitle_size"
+        android:fontFamily="@font/simple_font"
+        android:id="@+id/user_address"
+        android:textColor="@color/text_grey_color"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/rec_divider"
+        android:layout_marginTop="@dimen/activity_margin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:gravity="center"
+            android:layout_weight="0.49"
+            android:id="@+id/details"
+            android:textSize="@dimen/text_paragraph_size"
+            android:fontFamily="@font/simple_font"
+            android:textColor="@color/text_black_color"
+            android:padding="15dp"></TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/rec_divider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/billgenerate"
+            android:gravity="center"
+            android:layout_weight="0.49"
+            android:id="@+id/bill_generate"
+            android:textSize="@dimen/text_paragraph_size"
+            android:fontFamily="@font/simple_font"
+            android:textColor="@color/text_black_color"
+            android:padding="15dp"></TextView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

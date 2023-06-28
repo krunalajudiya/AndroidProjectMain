@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Contact_us">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+
+
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are here to hep each other! Taxitrip business designs tranportation solutions and programs that drive Your business and upgrade Your experience."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/taxi1gif"
+                android:layout_below="@id/description"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/taxic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/taxi1gif"
+                android:layout_marginTop="10dp">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    app:met_iconLeft="@drawable/man"
+                    app:met_floatingLabel="highlight"
+                    app:met_baseColor="@color/gen_black"
+                    app:met_clearButton="true"
+                    app:met_primaryColor="@color/gen_black"
+                    app:met_errorColor="@color/darkWhite"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    app:met_iconLeft="@drawable/man"
+                    app:met_floatingLabel="highlight"
+                    app:met_baseColor="@color/gen_black"
+                    app:met_clearButton="true"
+                    app:met_primaryColor="@color/gen_black"
+                    app:met_errorColor="@color/darkWhite"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment"
+                    app:met_iconLeft="@drawable/man"
+                    app:met_floatingLabel="highlight"
+                    app:met_baseColor="@color/gen_black"
+                    app:met_clearButton="true"
+                    app:met_primaryColor="@color/gen_black"
+                    app:met_errorColor="@color/darkWhite"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/submit"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

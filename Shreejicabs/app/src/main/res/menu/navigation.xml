@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/pickdrop"
+        android:icon="@drawable/calendar"
+        android:title="@string/pickdrop" />
+
+<!--    <item-->
+<!--        android:id="@+id/chat"-->
+<!--        android:icon="@drawable/chat"-->
+<!--        android:title="@string/chat" />-->
+    <item
+        android:id="@+id/fraudlist"
+        android:icon="@drawable/ic_required"
+        android:title="Fraud List"/>
+    <item
+        android:id="@+id/avalibility"
+        android:icon="@drawable/car"
+        android:title="@string/avaliability" />
+    <item
+        android:id="@+id/packages"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
+
+
+</menu>

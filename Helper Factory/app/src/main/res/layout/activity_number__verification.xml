@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_back1"
+    tools:context=".Activity.Number_Verification">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/imagecontent"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aquawaxmedium"
+        android:text="@string/yourhomeservice"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:text="@string/quick"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_subtitle_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:padding="5dp"
+            android:text="@string/des"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_subtitle_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:text="@string/affordable"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_subtitle_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:padding="5dp"
+            android:text="@string/des"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_subtitle_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawaxmedium"
+            android:text="@string/trusted"
+            android:textColor="@color/text_grey_color"
+            android:textSize="@dimen/text_subtitle_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mobilenumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:autofillHints="@string/hintmobilenumber"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/hintmobilenumber"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobilenumber">
+
+        <EditText
+            android:id="@+id/ruffercode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:autofillHints="Referral Code"
+            android:background="@drawable/edittext_border"
+            android:hint="Referral Code"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:layout_marginRight="5dp"></EditText>
+
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            style="@style/spinner_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="5dp"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/privacy_check"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <CheckBox
+            android:id="@+id/privacycheck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:padding="0dp"
+            android:text="@string/ivereadandaccept"></CheckBox>
+
+        <TextView
+            android:id="@+id/readmore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/readmore"
+            android:textColor="@color/colorprimary"></TextView>
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/aquawaxmedium"
+        android:text="@string/loginsignup"
+        android:textColor="@color/text_black_color"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy_check"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/skip"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:background="@drawable/skip_btn"
+        android:fontFamily="@font/aquawaxmedium"
+        android:text="@string/skip"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></android.widget.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

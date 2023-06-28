@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "586974607960",
+    "firebase_url": "https://neelam-sales-force.firebaseio.com",
+    "project_id": "neelam-sales-force",
+    "storage_bucket": "neelam-sales-force.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586974607960:android:80982595a6765625f9682d",
+        "android_client_info": {
+          "package_name": "com.technocometsolutions.salesdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586974607960-m34vrr3pad2rjgojf571n4edhapeb7lh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3qPGvmEUnRr_uPSrF_RDIyw9cXv2UkEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586974607960-m34vrr3pad2rjgojf571n4edhapeb7lh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

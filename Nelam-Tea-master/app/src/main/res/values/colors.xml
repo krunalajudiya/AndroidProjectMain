@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">#1ABDB8</color>
+    <color name="colorPrimaryDark">#1ABDB8</color>
+    <color name="colorAccent">#1ABDB8</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorDivider">#f3f3f3</color>
+    <color name="gray_more_light">#33e5e5e5</color>
+    <color name="gray_light">#F7F7F7</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="tab_selected_color">#d21034</color>
+    <color name="red_toolbar">#d21034</color>
+    <color name="red_statusbar">#d21034</color>
+    <color name="red_app">#1ABDB8</color>
+    <color name="red_statusbar_dark">#b81432</color>
+    <color name="tab_unselected_color">#96a5ae</color>
+    <color name="gray_border">#eff1f3</color>
+    <color name="gray_text">#293d51</color>
+    <color name="gray_text_disabled">#54677d</color>
+    <color name="gray_text_faded">#80555e63</color>
+    <color name="gray_text_fadedd">#80B1B2B3</color>
+
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#f52a30</color>
+    <color name="quizpurple_1">#f52a30</color>
+    <color name="quizpurple_2">#f52a30</color>
+    <color name="quizpurple_3">#f52a30</color>
+    <color name="quizpurple_4">#f52a30</color>
+    <color name="yello">#ffb300</color>
+    <color name="blue">#0d47a1</color>
+    <color name="deeppurple1">#673ab7</color>
+    <color name="green">#00bfa5</color>
+    <color name="pink">#ff4081</color>
+    <color name="red">#1ABDB8</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">Helper vendor</string>
+    <string name="neworder" translatable="false">New order</string>
+    <string name="order" translatable="false">Order</string>
+    <string name="account" translatable="false">Account</string>
+    <string name="confirmorder" translatable="false">Confirm order</string>
+    <string name="details" translatable="false">Details</string>
+    <string name="billgenerate" translatable="false">Bill Calculate</string>
+    <string name="ongoing" translatable="false">Ongoing</string>
+    <string name="history" translatable="false">History</string>
+    <string name="nobooking" translatable="false">No Order Found</string>
+    <string name="bill" translatable="false">Bill</string>
+    <string name="service" translatable="false">Services</string>
+    <string name="addservice" translatable="false">Add Services</string>
+    <string name="pleaseaddservice" translatable="false">Please Add services then Display Order</string>
+    <string name="generatebill" translatable="false">Generate Bill</string>
+    <string name="servicecharge" translatable="false">Service Charges</string>
+    <string name="totalpartcharge" translatable="false">Total part Charges</string>
+    <string name="totalquantity" translatable="false">quantity</string>
+    <string name="yourcharge" translatable="false">Your Charges</string>
+    <string name="helperfactory" translatable="false">Helper Factory</string>
+    <string name="helperfactorynumber" translatable="false">+919725547850</string>
+    <string name="reject" translatable="false">Reject</string>
+    <string name="discount" translatable="false">Discount</string>
+    <string name="caldiscount" translatable="false">Calculate Discount</string>
+    <string name="ivereadandaccept" translatable="false">I have read and accept the Privacy Policy.</string>
+    <string name="readmore" translatable="false">Read more</string>
+    <string name="warning" translatable="false">If any change contact Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

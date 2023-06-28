@@ -1,0 +1,3 @@
+include ':aFileChooser'
+include ':app'
+rootProject.name = "Helper vendor"

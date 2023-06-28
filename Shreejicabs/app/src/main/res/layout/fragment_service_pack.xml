@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loading_screeen"
+            app:lottie_fileName="loading_animation.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone"
+            tools:context=".Fragment.Service_pack">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Airport Transfer"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addairport_service"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Local 4hr/40km"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l_hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l_hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l_sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l_sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l_suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l_suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/l_communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/l_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/l_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addlocal_service"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Local 8hr/80km"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l8_hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l8_hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l8_sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l8_sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l8_suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l8_suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/l8_communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/l8_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/l8_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addlocal_service8"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Local 12hr/12km"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l12_hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l12_hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l12_sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l12_sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/l12_suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/l12_suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/l12_communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/l12_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/l12_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addlocal_service12"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="One Way"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/from_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:hint="Form city"
+                            android:theme="@style/EditTextTheme" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/to_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0.5"
+                            android:hint="To city"
+                            android:theme="@style/EditTextTheme" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/o_hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/o_hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/o_sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/o_sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/o_suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/o_suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/o_communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/o_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/o_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addoneway_service"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Round Trip"
+                        android:textColor="@color/gen_black"
+                        android:textSize="18sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#A6A5A5"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/r_hatchback_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Hatchback"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/r_hatchback_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/r_sedan_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Sedan"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/r_sedan_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <CheckBox
+                            android:id="@+id/r_suv_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="SUV"></CheckBox>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/r_suv_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="Rate"
+                            android:visibility="gone"
+                            app:met_clearButton="true"
+                            app:met_errorColor="@color/darkWhite"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/gen_black" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/r_communicationgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/r_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chat"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/r_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/card_margin"
+                            android:text="Call"
+                            android:textColor="@color/gen_black"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/addroundtrip_service"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Add service"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

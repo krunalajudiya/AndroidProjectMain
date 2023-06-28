@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.AddNew_Vehicle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/modelname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Model Name"
+                android:inputType="textPersonName"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/car"
+                app:met_primaryColor="@color/gen_black" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/passingyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Passing Year"
+                android:inputType="number"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/passing"
+                app:met_primaryColor="@color/gen_black" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/colorvehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle Color"
+                android:inputType="textPersonName"
+                app:met_baseColor="@color/gen_black"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/darkWhite"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/color_vehicle"
+                app:met_primaryColor="@color/gen_black" />
+
+            <RadioGroup
+                android:id="@+id/fuletype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/PETROL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Petrol"
+                    android:checked="true"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/DISEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Disel"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/CNG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CNG"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="17dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="carrier is avalible"
+                android:textColor="@color/black_overlay"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/carrier_available"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/YES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/black_overlay" />
+
+                <RadioButton
+                    android:id="@+id/NO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+                    android:textColor="@color/black_overlay" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/taxiimage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo" />
+
+                <Button
+                    android:id="@+id/chooseimage"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Upload Image" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

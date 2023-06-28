@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_custom_background">
+
+    <TextView
+        android:id="@+id/fraudlist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/gen_black"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/profile"/>
+    <TextView
+        android:id="@+id/fraudlist_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/gen_black"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_phone_call"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

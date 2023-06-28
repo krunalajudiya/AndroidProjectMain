@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/user"
+        android:id="@+id/o_img"
+        android:layout_gravity="center"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salon for Men"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/o_name"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aquawaxmedium"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_subtitle_size"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upto 50% off"
+        android:id="@+id/o_desc"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_grey_color"
+        android:textSize="@dimen/text_subtitle_size"></TextView>
+
+
+</LinearLayout>
